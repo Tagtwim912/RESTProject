@@ -1,0 +1,224 @@
+html {
+    scroll-behavior: smooth;
+    font-family: "Montsera", sans-serif;
+}
+
+body {
+    background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
+    -webkit-animation: slide 18s linear infinite;
+    width: 100%;
+    margin: 0;
+    height: 300px;
+
+}
+
+
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+
+#headerText{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #092834;
+    background-color: #eddeff;
+}
+option{
+    background-color: #10101010;
+}
+
+#menuBox{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+}
+#lieuxBox{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+#activitesBox{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.btMenu{
+    height: 100%;
+    padding: 20px;
+    border:none;
+    margin:  10px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #44444444;
+    transition: 1s;
+}
+
+.btMenu:hover{
+    background-color: #44444484;
+    border-radius: 0px;
+    transition: 0.5s;
+}
+
+select{
+    width: 170px;
+    height: 30px;
+    margin: 10px;
+    background-color: #20202020;
+    border: none;
+}
+.scrollers{
+    height: 100%;
+    width: 100%;
+    background-color: #20202020;
+}
+#rightContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    margin-top: 5px;
+    padding: 50px;
+    padding-top: 0;
+}
+
+#leftContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: auto;
+    flex-direction: column;
+    margin-top: 14px;
+    padding: 50px;
+    padding-top: 0;
+}
+
+.txtActivity{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #12121250;
+}
+
+
+#rightList{
+    list-style-type: none;
+    padding: 5px;
+}
+.rightLi{
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    margin-bottom: 5px
+}
+
+.leftLi{
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    margin-bottom: 20px
+}
+
+
+li a{
+    width: 100%;
+}
+
+
+
+#map{
+    width: 100%;
+    height: 300px;
+
+}
+
+
+#bottom{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+#detailsDiv{
+    width: 70%;
+    height: auto;
+}
+
+
+#bothDetailsBoxes{
+    display: flex;
+    justify-content: center;
+
+}
+.bothContainers a:hover{
+    background-color: #12121212;
+}
+
+.arrangeDetails{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    width: 50%;
+}
+h3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #12121212;
+    height: 50px;
+}
+
+
+@media only screen and (max-width: 1100px) {
+    #activitesBox{
+        flex-direction: column;
+        height: auto;
+    }
+    #leftContainer{
+        width: 90%;
+        max-height: 500px;
+    }
+    #bothDetailsBoxes{
+        display: flex;
+        flex-direction: column;
+        transition: 1s;
+    }
+    #rightContainer{
+        width: 90%;
+    }
+    .arrangeDetails{
+        width: 100%;
+    }
+    #activitesBox .scrollers{
+        max-height: 500px;
+    }
+    #detailsDiv{
+        width: 90%;
+    }
+}
